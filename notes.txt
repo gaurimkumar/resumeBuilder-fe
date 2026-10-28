@@ -1,0 +1,18 @@
+Lifting state:
+
+Lifting state up in Reacct is the practice of moving shared state from individual child components to their closest common ancestor.
+
+Because data flows download in React (unidirectional data flow), sibling components cannot directly talk to each other. Lifting state solves this by centralizing the data in the parent component.
+
+Object Destructuring:
+
+object destructuring is a Javascript syntax introduced in ES6 that allows you to unpack properties from objects directly into distinct variables
+
+const user = {name: "Alice", age: 25, city: "New York" };
+
+// Traditional way
+// const name = user.name;
+// const age = user.age;
+
+// Destructuring way
+const {name, age} = user;
